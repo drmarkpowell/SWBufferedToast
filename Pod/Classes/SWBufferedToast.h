@@ -25,6 +25,7 @@
 
 @property (nonatomic, assign) BOOL isLocked;
 @property (nonatomic, weak) id <SWBufferedToastDelegate> delegate;
+@property (nonatomic, strong) SWToast *toastView;
 
 - (instancetype)initPlainToastWithTitle:(NSString*)title
                                subtitle:(NSString*)subtitle
